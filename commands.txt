@@ -1,0 +1,9 @@
+cd C:\Users\karka\flask_auth_app
+
+auth\Scripts\activate.bat
+
+set FLASK_APP=project
+
+set FLASK_DEBUG=1
+
+flask run

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<body>
+    <section class="hero is-primary is-fullheight">
+
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+
+                            <p style="margin: 15px;">
+                            <a href="{{ url_for('main.index') }}">
+                                главная
+                            </a>
+                            </p>
+
+                            <p style="margin: 15px;">
+                            <a href="{{ url_for('main.profile') }}">
+                                профиль
+                            </a>
+                            </p>
+
+                            <p style="margin: 15px;">
+                            <a href="{{ url_for('auth.login') }}">
+                                войти
+                            </a>
+                            </p>
+
+                            <p style="margin: 15px;">
+                            <a href="{{ url_for('auth.signup') }}">
+                                регистрация
+                            </a>
+                            </p>
+
+                            <p style="margin: 15px;">
+                            <a href="{{ url_for('auth.logout') }}">
+                                выйти
+                            </a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+               {% block content %}
+               {% endblock %}
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
